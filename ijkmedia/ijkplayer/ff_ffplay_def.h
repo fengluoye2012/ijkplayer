@@ -153,7 +153,7 @@ typedef struct GetImgInfo {
     int count;
     int width;
     int height;
-    AVCodecContext *frame_img_codec_ctx;
+    Context *frame_img_codec_ctx;
     struct SwsContext *frame_img_convert_ctx;
 } GetImgInfo;
 

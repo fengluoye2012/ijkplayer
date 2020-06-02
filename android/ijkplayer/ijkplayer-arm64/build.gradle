@@ -5,21 +5,44 @@ android {
     //noinspection GroovyAssignabilityCheck
     compileSdkVersion rootProject.ext.compileSdkVersion
     //noinspection GroovyAssignabilityCheck
-    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
-        minSdkVersion 21
+        minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
+
+        //添加以下内容
+        externalNativeBuild {
+            ndkBuild {
+                arguments "NDK_APPLICATION:=src/main/jni/Application.mk"
+                abiFilters "arm64-v8a"
+            }
+        }
     }
     buildTypes {
+        //添加以下内容
+        debug {
+            debuggable true
+            jniDebuggable true
+            ndk {
+                debuggable true
+            }
+        }
+
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    sourceSets.main {
-        jniLibs.srcDirs 'src/main/libs'
-        jni.srcDirs = [] // This prevents the auto generation of Android.mk
+//    sourceSets.main {
+//        jniLibs.srcDirs 'src/main/libs'
+//        jni.srcDirs = [] // This prevents the auto generation of Android.mk
+//    }
+
+    //添加以下内容
+    externalNativeBuild {
+        ndkBuild {
+            path "src/main/jni/Android.mk"
+        }
     }
 }
 

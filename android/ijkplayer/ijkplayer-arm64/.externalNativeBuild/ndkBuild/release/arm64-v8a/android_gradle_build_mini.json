@@ -1,0 +1,53 @@
+{
+  "buildFiles": [
+    "/Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/src/main/jni/Android.mk",
+    "/Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/src/main/jni/Application.mk"
+  ],
+  "cleanCommands": [
+    "/Users/mac/Library/Android/sdk/ndk-r17c/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/src/main/jni/Application.mk APP_ABI\u003darm64-v8a NDK_ALL_ABIS\u003darm64-v8a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-19 NDK_OUT\u003d/Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003d/Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/build/intermediates/ndkBuild/release/lib NDK_APPLICATION:\u003dsrc/main/jni/Application.mk clean"
+  ],
+  "libraries": {
+    "ijkj4a-release-arm64-v8a": {
+      "artifactName": "ijkj4a",
+      "buildCommand": "/Users/mac/Library/Android/sdk/ndk-r17c/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/src/main/jni/Application.mk APP_ABI\u003darm64-v8a NDK_ALL_ABIS\u003darm64-v8a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-19 NDK_OUT\u003d/Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003d/Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/build/intermediates/ndkBuild/release/lib NDK_APPLICATION:\u003dsrc/main/jni/Application.mk /Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/build/intermediates/ndkBuild/release/obj/local/arm64-v8a/libijkj4a.a",
+      "abi": "arm64-v8a",
+      "output": "/Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/build/intermediates/ndkBuild/release/obj/local/arm64-v8a/libijkj4a.a"
+    },
+    "cpufeatures-release-arm64-v8a": {
+      "artifactName": "cpufeatures",
+      "buildCommand": "/Users/mac/Library/Android/sdk/ndk-r17c/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/src/main/jni/Application.mk APP_ABI\u003darm64-v8a NDK_ALL_ABIS\u003darm64-v8a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-19 NDK_OUT\u003d/Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003d/Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/build/intermediates/ndkBuild/release/lib NDK_APPLICATION:\u003dsrc/main/jni/Application.mk /Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/build/intermediates/ndkBuild/release/obj/local/arm64-v8a/libcpufeatures.a",
+      "abi": "arm64-v8a",
+      "output": "/Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/build/intermediates/ndkBuild/release/obj/local/arm64-v8a/libcpufeatures.a"
+    },
+    "yuv_static-release-arm64-v8a": {
+      "artifactName": "yuv_static",
+      "buildCommand": "/Users/mac/Library/Android/sdk/ndk-r17c/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/src/main/jni/Application.mk APP_ABI\u003darm64-v8a NDK_ALL_ABIS\u003darm64-v8a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-19 NDK_OUT\u003d/Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003d/Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/build/intermediates/ndkBuild/release/lib NDK_APPLICATION:\u003dsrc/main/jni/Application.mk /Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/build/intermediates/ndkBuild/release/obj/local/arm64-v8a/libyuv_static.a",
+      "abi": "arm64-v8a",
+      "output": "/Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/build/intermediates/ndkBuild/release/obj/local/arm64-v8a/libyuv_static.a"
+    },
+    "ijksoundtouch-release-arm64-v8a": {
+      "artifactName": "ijksoundtouch",
+      "buildCommand": "/Users/mac/Library/Android/sdk/ndk-r17c/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/src/main/jni/Application.mk APP_ABI\u003darm64-v8a NDK_ALL_ABIS\u003darm64-v8a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-19 NDK_OUT\u003d/Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003d/Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/build/intermediates/ndkBuild/release/lib NDK_APPLICATION:\u003dsrc/main/jni/Application.mk /Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/build/intermediates/ndkBuild/release/obj/local/arm64-v8a/libijksoundtouch.a",
+      "abi": "arm64-v8a",
+      "output": "/Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/build/intermediates/ndkBuild/release/obj/local/arm64-v8a/libijksoundtouch.a"
+    },
+    "android-ndk-profiler-release-arm64-v8a": {
+      "artifactName": "android-ndk-profiler",
+      "buildCommand": "/Users/mac/Library/Android/sdk/ndk-r17c/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/src/main/jni/Application.mk APP_ABI\u003darm64-v8a NDK_ALL_ABIS\u003darm64-v8a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-19 NDK_OUT\u003d/Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003d/Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/build/intermediates/ndkBuild/release/lib NDK_APPLICATION:\u003dsrc/main/jni/Application.mk /Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/build/intermediates/ndkBuild/release/obj/local/arm64-v8a/libandroid-ndk-profiler.a",
+      "abi": "arm64-v8a",
+      "output": "/Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/build/intermediates/ndkBuild/release/obj/local/arm64-v8a/libandroid-ndk-profiler.a"
+    },
+    "ijksdl-release-arm64-v8a": {
+      "artifactName": "ijksdl",
+      "buildCommand": "/Users/mac/Library/Android/sdk/ndk-r17c/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/src/main/jni/Application.mk APP_ABI\u003darm64-v8a NDK_ALL_ABIS\u003darm64-v8a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-19 NDK_OUT\u003d/Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003d/Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/build/intermediates/ndkBuild/release/lib NDK_APPLICATION:\u003dsrc/main/jni/Application.mk /Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/build/intermediates/ndkBuild/release/obj/local/arm64-v8a/libijksdl.so",
+      "abi": "arm64-v8a",
+      "output": "/Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/build/intermediates/ndkBuild/release/obj/local/arm64-v8a/libijksdl.so"
+    },
+    "ijkplayer-release-arm64-v8a": {
+      "artifactName": "ijkplayer",
+      "buildCommand": "/Users/mac/Library/Android/sdk/ndk-r17c/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/src/main/jni/Application.mk APP_ABI\u003darm64-v8a NDK_ALL_ABIS\u003darm64-v8a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-19 NDK_OUT\u003d/Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003d/Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/build/intermediates/ndkBuild/release/lib NDK_APPLICATION:\u003dsrc/main/jni/Application.mk /Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/build/intermediates/ndkBuild/release/obj/local/arm64-v8a/libijkplayer.so",
+      "abi": "arm64-v8a",
+      "output": "/Users/mac/Desktop/AppDemo/ijkplayer-android/android/ijkplayer/ijkplayer-arm64/build/intermediates/ndkBuild/release/obj/local/arm64-v8a/libijkplayer.so"
+    }
+  }
+}
