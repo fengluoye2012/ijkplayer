@@ -10,6 +10,8 @@
 - 消息队列MessageQueue：https://blog.csdn.net/a910626/article/details/98893750
 - 流程分析-ijkplayer状态图：https://blog.csdn.net/a910626/article/details/98893836
 
+#### JeffMony ijkplayer 开源项目分析（重要，流程图特别清晰）
+- ijkplayer 开源项目分析(二)播放流程概要：https://www.jianshu.com/p/3fb005f9378b
 
 ####其他
 - ijkplayer 源码分析（上）：https://yhaolpz.github.io/186751e8/
@@ -23,6 +25,9 @@
 
 #### 笔记
 - ijkPlayer_jni和Java的通信的类
+- prepareAsync()方法请求数据，最终会调用ff_ffplay.c中的stream_open函数，进而调用FFMpeg的avformat_open_input()函数
+  avformat_open_input 函数 主要负责解析 视频url，不管是不是网络的url还是本地的url，这个函数也相当复杂，解析完成后，存到ic地址中，这个ic就是AVFormatContext结构体；
+
 
 
 ### FFmpeg
@@ -34,6 +39,7 @@
 - AVDictionary：AVDictionary是一个健值对存储工具，类似于c++中的map，ffmpeg中有很多 API 通过它来传递参数。例如用来设置Option;
   https://www.jianshu.com/p/89f2da631e16
 
+- avformat_open_input 函数 主要负责解析 视频url，不管是不是网络的url还是本地的url，这个函数也相当复杂，解析完成后，存到ic地址中，这个ic就是AVFormatContext结构体；
 
 
 ### SDL：是一套开放源代码的跨平台多媒体开发库，使用C语言写成。SDL提供了数种控制图像、声音、输出入的函数。
