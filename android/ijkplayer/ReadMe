@@ -28,9 +28,11 @@
 - prepareAsync()方法请求数据，最终会调用ff_ffplay.c中的stream_open函数，进而调用FFMpeg的avformat_open_input()函数
   avformat_open_input 函数 主要负责解析 视频url，不管是不是网络的url还是本地的url，这个函数也相当复杂，解析完成后，存到ic地址中，这个ic就是AVFormatContext结构体；
 
+- prepareAsync()过程中会在ff_ffplay.c的ffp_prepare_async_l()方法将设置的Option参数打印出来，所以设置Option必须在prepareAsync()方法之前。
 
 
-### FFmpeg
+
+### FFmpeg：目前只能看到头文件，如何看到.c文件呢？todo
 
 #### 源码分析：
 - ffplay.c 源码分析- 视频部分：https://www.jianshu.com/p/088dd1c32942
@@ -41,6 +43,23 @@
 
 - avformat_open_input 函数 主要负责解析 视频url，不管是不是网络的url还是本地的url，这个函数也相当复杂，解析完成后，存到ic地址中，这个ic就是AVFormatContext结构体；
 
+- ffmpeg日志系统av_log()：https://www.cnblogs.com/elesos/p/7927710.html
+
 
 ### SDL：是一套开放源代码的跨平台多媒体开发库，使用C语言写成。SDL提供了数种控制图像、声音、输出入的函数。
 
+### JNI、NDK
+- Android System.loadLibrary()的流程，最后会调用JNI_OnLoad()方法，动态注册。
+
+### C、C++
+- 函数指针如何调用
+
+
+### Todo
+- FFMpeg 异步获取文件的业务逻辑，是分片下载还是一次性下载
+- 可以考虑将文件缓存的逻辑放入ijkPlayer的C库中，在网络下载数据解封装的过程中就将文件缓存到本地，下次播放的过程中从本地读取。可以考虑使用FFmpeg自己实现；
+  参考文档：FFmpeg实战 保存网络流：https://www.jianshu.com/p/0cf0c93dc4be
+  使用FFmpeg保存网络流到本地文件：https://blog.csdn.net/AndrExpert/article/details/101537742
+  Android 集成 ijkplayer 音频播放 如何边播放边缓存音频文件到本地：https://www.jianshu.com/p/9e7ebabf3a3f
+
+- 使用C下载文件并且缓存到本地中；
