@@ -28,11 +28,15 @@
 - prepareAsync()方法请求数据，最终会调用ff_ffplay.c中的stream_open函数，进而调用FFMpeg的avformat_open_input()函数
   avformat_open_input 函数 主要负责解析 视频url，不管是不是网络的url还是本地的url，这个函数也相当复杂，解析完成后，存到ic地址中，这个ic就是AVFormatContext结构体；
 
+- ff_ffmsg_queue.h  消息队列，消息的添加，查询，删除；
+- ff_ffplay.c read_thread()方法从网络或者本地文件中获取数据
 
 
 ### FFmpeg
 
 #### 源码分析：
+
+- FFmpeg源代码结构图 - 解码：https://blog.csdn.net/leixiaohua1020/article/details/44220151
 - ffplay.c 源码分析- 视频部分：https://www.jianshu.com/p/088dd1c32942
 
 #### 小知识点讲解：
@@ -43,4 +47,7 @@
 
 
 ### SDL：是一套开放源代码的跨平台多媒体开发库，使用C语言写成。SDL提供了数种控制图像、声音、输出入的函数。
+
+
+### JNI https://www.jianshu.com/p/87ce6f565d37
 
